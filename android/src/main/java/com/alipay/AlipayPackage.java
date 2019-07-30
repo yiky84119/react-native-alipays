@@ -10,15 +10,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by m2mbob on 16/5/6.
- */
 public class AlipayPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new AlipayModule(reactContext));
+        modules.add(new RNAlipay(reactContext));
         return modules;
     }
 
