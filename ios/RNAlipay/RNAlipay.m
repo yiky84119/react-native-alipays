@@ -68,4 +68,9 @@ RCT_EXPORT_METHOD(pay:(NSString*)payInfo withCallback:(RCTResponseSenderBlock)ca
     }
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 @end
